@@ -1,21 +1,21 @@
 {% set name = "pyglotaran" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 {% set download_name = "pyglotaran" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ download_name[0] }}/{{ download_name }}/{{ download_name }}-{{ version }}.tar.gz"
-  sha256: ec8d32208af1366f0a10a9adb1ad6644bf009bace8eaca86769218968bd240b9
+  url: https://pypi.io/packages/source/{{ download_name[0] }}/{{ download_name }}/{{ download_name }}-{{ version }}.tar.gz
+  sha256: 5fea438af84fdd1818133d0d725c889520ca9f34e476083b5d3d9a5672eff414
 
 build:
   number: 0
   noarch: python
   entry_points:
     - glotaran=glotaran.cli.main:glotaran
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
   host:
@@ -51,13 +51,13 @@ test:
     - pytest
 
 about:
-  home: "https://github.com/glotaran/pyglotaran"
-  license: "GPL-3.0-only"
+  home: https://github.com/glotaran/pyglotaran
+  license: GPL-3.0-only
   license_family: GPL3
   license_file: LICENSE
-  summary: "The Glotaran fitting engine."
-  doc_url: "https://pyglotaran.readthedocs.io/en/latest/?badge=latest"
-  dev_url: "https://github.com/glotaran/pyglotaran"
+  summary: The Glotaran fitting engine.
+  doc_url: https://pyglotaran.readthedocs.io/en/latest/?badge=latest
+  dev_url: https://github.com/glotaran/pyglotaran
 
 extra:
   recipe-maintainers:
