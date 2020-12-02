@@ -5,11 +5,13 @@ Home: https://github.com/glotaran/pyglotaran
 
 Package license: GPL-3.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyglotaran-feedstock/blob/master/LICENSE.txt)
 
 Summary: The Glotaran fitting engine.
 
+Development: https://github.com/glotaran/pyglotaran
 
+Documentation: https://pyglotaran.readthedocs.io/en/latest/?badge=latest
 
 Current build status
 ====================
