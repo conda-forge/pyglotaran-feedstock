@@ -48,8 +48,8 @@ test:
 
 about:
   home: https://github.com/glotaran/pyglotaran
-  license: GPL-3.0-only
-  license_family: GPL3
+  license: LGPL-3.0-only
+  license_family: LGPL3
   license_file: LICENSE
   summary: The Glotaran fitting engine.
   doc_url: https://pyglotaran.readthedocs.io/en/latest/?badge=latest
