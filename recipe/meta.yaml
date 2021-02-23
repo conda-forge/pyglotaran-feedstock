@@ -11,7 +11,7 @@ source:
   sha256: 02043f9a7cf3c4ff3c9a02bc4202b787f57d8a9d767e659eb33f397006bcf2ca
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - glotaran=glotaran.cli.main:glotaran
