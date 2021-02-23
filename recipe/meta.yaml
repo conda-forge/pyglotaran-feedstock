@@ -11,7 +11,7 @@ source:
   sha256: 02043f9a7cf3c4ff3c9a02bc4202b787f57d8a9d767e659eb33f397006bcf2ca
 
 build:
-  number: 1
+  number: 2
   noarch: python
   entry_points:
     - glotaran=glotaran.cli.main:glotaran
@@ -48,7 +48,7 @@ test:
 
 about:
   home: https://github.com/glotaran/pyglotaran
-  license: LGPL-3.0-only
+  license: LGPL-3.0
   license_family: LGPL
   license_file: LICENSE
   summary: The Glotaran fitting engine.
