@@ -3,7 +3,7 @@ About pyglotaran
 
 Home: https://github.com/glotaran/pyglotaran
 
-Package license: GPL-3.0-only
+Package license: LGPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyglotaran-feedstock/blob/master/LICENSE.txt)
 
