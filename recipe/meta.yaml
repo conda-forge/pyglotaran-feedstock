@@ -44,7 +44,7 @@ test:
     - glotaran
   commands:
     - glotaran --help
-    - pytest -k "not IrfDispersion" glotaran
+    - pytest glotaran
   requires:
     - pytest
     - ipython
