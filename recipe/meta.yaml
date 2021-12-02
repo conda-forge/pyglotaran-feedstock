@@ -14,7 +14,7 @@ build:
   number: 0
   noarch: python
   entry_points:
-    - glotaran=glotaran.cli.main:glotaran
+    - glotaran=glotaran.cli.main:main
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
