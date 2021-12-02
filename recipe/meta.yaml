@@ -1,5 +1,5 @@
 {% set name = "pyglotaran" %}
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 {% set download_name = "pyglotaran" %}
 
 package:
@@ -8,13 +8,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ download_name[0] }}/{{ download_name }}/{{ download_name }}-{{ version }}.tar.gz
-  sha256: 5e70f99a6b808bc31b1f9b069bdbf98447a5e2417bce12c89cc5a86c200de1f3
+  sha256: 4cc8e1ada048d92551f92566cf810ac6f4545eb27183dca6c096023e1588cead
 
 build:
   number: 0
   noarch: python
   entry_points:
-    - glotaran=glotaran.cli.main:glotaran
+    - glotaran=glotaran.cli.main:main
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
@@ -27,14 +27,15 @@ requirements:
     - click >=7.0
     - netcdf4 >=1.5.3
     - numba >=0.52
-    - numpy >=1.20.0
+    - numpy >=1.20.0,<1.21
     - pandas >=0.25.2
-    - pyyaml >=5.2
+    - rich >=10.9.0
+    - ruamel.yaml >=0.17.17
     - scipy >=1.3.2
     - sdtfile >=2020.8.3
     - setuptools >=41.2
     - tabulate >=0.8.8
-    - xarray >=0.16.2
+    - xarray !=0.20.0,!=0.20.1,>=0.16.2
 
 test:
   imports:
@@ -43,7 +44,7 @@ test:
     - glotaran
   commands:
     - glotaran --help
-    - pytest -k "not IrfDispersion" glotaran
+    - pytest glotaran
   requires:
     - pytest
     - ipython
