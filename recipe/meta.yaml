@@ -1,5 +1,5 @@
 {% set name = "pyglotaran" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 {% set download_name = "pyglotaran" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ download_name[0] }}/{{ download_name }}/{{ download_name }}-{{ version }}.tar.gz
-  sha256: 4cc8e1ada048d92551f92566cf810ac6f4545eb27183dca6c096023e1588cead
+  sha256: 996dee1f2cf205a31d67866f5e6ff60635f6b1f9bc7bec6b016b1b2bfd6a5e2b
 
 build:
   number: 0
