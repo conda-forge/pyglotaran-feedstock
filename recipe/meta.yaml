@@ -56,7 +56,7 @@ about:
   license: LGPL-3.0-only
   license_family: LGPL
   license_file: LICENSE
-  summary: The Glotaran fitting engine.
+  summary: A Python library for Global and Target Analysis of time-resolved spectroscopy data.
   doc_url: https://pyglotaran.readthedocs.io/en/latest/?badge=latest
   dev_url: https://github.com/glotaran/pyglotaran
 
