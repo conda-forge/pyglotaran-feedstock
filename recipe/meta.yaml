@@ -20,6 +20,7 @@ build:
 requirements:
   host:
     - pip
+    - setuptools
     - python >=3.10,<3.12
   run:
     - python >=3.10,<3.12
