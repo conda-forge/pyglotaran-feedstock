@@ -7,7 +7,7 @@ Home: https://github.com/glotaran/pyglotaran
 
 Package license: LGPL-3.0-only
 
-Summary: The Glotaran fitting engine.
+Summary: A Python library for Global and Target Analysis of time-resolved spectroscopy data.
 
 Development: https://github.com/glotaran/pyglotaran
 

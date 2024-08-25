@@ -1,5 +1,5 @@
 {% set name = "pyglotaran" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 {% set download_name = "pyglotaran" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ download_name[0] }}/{{ download_name }}/{{ download_name }}-{{ version }}.tar.gz
-  sha256: aa9f9b10a9d554017e444e6522ec87cfa9ace682ee8e8f98a4660c2424c5c0de
+  sha256: eea5700a58c89b5f0581f875845ba2504facd29bf618fe46196f6e532abfa2f5
 
 build:
   number: 0
@@ -20,6 +20,7 @@ build:
 requirements:
   host:
     - pip
+    - setuptools
     - python >=3.10,<3.12
   run:
     - python >=3.10,<3.12
@@ -57,6 +58,17 @@ about:
   license_family: LGPL
   license_file: LICENSE
   summary: A Python library for Global and Target Analysis of time-resolved spectroscopy data.
+  description: |
+    Pyglotaran is a python library for global analysis of time-resolved spectroscopy data. It is designed to provide a state of the art modeling toolbox to researchers, in a user-friendly manner.
+
+    Its features are:
+    - user-friendly modeling with a custom YAML (*.yml) based modeling language
+    - parameter optimization using variable projection and non-negative least-squares algorithms
+    - easy to extend modeling framework
+    - battle-hardened model and algorithms for fluorescence dynamics
+    - build upon and fully integrated in the standard Python science stack (NumPy, SciPy, Jupyter)
+
+    pyglotaran is ideal for researchers and scientists who require a powerful, yet user-friendly tool for analyzing complex systems, from time-resolved spectroscopy to broader applications in scientific modeling.
   doc_url: https://pyglotaran.readthedocs.io/en/latest/?badge=latest
   dev_url: https://github.com/glotaran/pyglotaran
 
