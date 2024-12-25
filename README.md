@@ -13,6 +13,18 @@ Development: https://github.com/glotaran/pyglotaran
 
 Documentation: https://pyglotaran.readthedocs.io/en/latest/?badge=latest
 
+Pyglotaran is a python library for global analysis of time-resolved spectroscopy data. It is designed to provide a state of the art modeling toolbox to researchers, in a user-friendly manner.
+
+Its features are:
+- user-friendly modeling with a custom YAML (*.yml) based modeling language
+- parameter optimization using variable projection and non-negative least-squares algorithms
+- easy to extend modeling framework
+- battle-hardened model and algorithms for fluorescence dynamics
+- build upon and fully integrated in the standard Python science stack (NumPy, SciPy, Jupyter)
+
+pyglotaran is ideal for researchers and scientists who require a powerful, yet user-friendly tool for analyzing complex systems, from time-resolved spectroscopy to broader applications in scientific modeling.
+
+
 Current build status
 ====================
 
