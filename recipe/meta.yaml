@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "pyglotaran" %}
-{% set version = "0.7.4" %}
+{% set version = "0.7.5" %}
 {% set download_name = "pyglotaran" %}
 
 package:
@@ -8,8 +8,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ download_name[0] }}/{{ download_name }}/{{ download_name }}-{{ version }}.tar.gz
-  sha256: f8c293e2e500b54d50dbbf7cc8bdf5c792b066de001f0e48a5894f02c6c1d224
+  url: https://files.pythonhosted.org/packages/source/{{ download_name[0] }}/{{ download_name }}/{{ download_name }}-{{ version }}.tar.gz
+  sha256: 444a17663bcb6351052de24ffcaf816c0ed3b28630eb5ebebe6bc55cb1c5b68b
 
 build:
   number: 0
